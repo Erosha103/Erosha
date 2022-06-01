@@ -1,0 +1,759 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* comfortaa-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/comfortaa-v38-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/comfortaa-v38-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/comfortaa-v38-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* comfortaa-regular - latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: local('saegr'),
+       url('../fonts/comfortaa-v38-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-500 - latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  src: local('tht'),
+       url('../fonts/comfortaa-v38-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-700 - latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  src: local('ddff'),
+       url('../fonts/comfortaa-v38-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html{
+	box-sizing: border-box;
+}
+*, *::befor, *::after{
+	box-sizing: inherit;
+}
+
+body{
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-size: 32px;
+  font-weight: normal;
+  color: #000000;
+}
+.wrapper{
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+/* Header styles start */
+
+.header{
+	background: rgba(35, 35, 35, 0.7);
+  position:fixed;
+  top: 0;
+  left:0;
+  width:100%;
+  z-index: 999;
+}
+.header_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.header_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_item:last-child{
+  margin-right: 0;
+}
+.header_link{
+  font-size: 32px;
+  line-height: 24px;
+  color:#000000;
+  text-decoration: none;
+}
+.installe{
+  background: #84DC2C;
+  border-radius: 20px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-size: 32px;
+  font-weight: normal;
+  color: #000000;
+
+  margin-right: 850px;
+  padding: 10px 25px;
+  border: 0;
+  margin-bottom: 25px;
+
+}
+.registr{
+  background: #C4C4C4;
+  border-radius: 5px;
+
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-size: 28px;
+  font-weight: normal;
+  color: #000000;
+
+  margin-right: 50px;
+  padding: 15px 15px;
+  border: 0;
+  margin-bottom: 25px;
+
+}
+.registr:last-child{
+  margin-right: 0;
+}
+.installe:hover,:focus,:active{
+  background:#5C9B1C;
+}
+.registr:hover,:focus,:active{
+  background: #898989;
+}
+
+/* Header styles end */
+
+/* Main start */
+
+
+.main{
+  width: 100%;
+  background: #454545;
+}
+.intro_main{
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+/* Button start */
+
+.intro{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.intro_nav{
+  padding: 150px 50px 50px 70px;
+}
+.intro_btn{
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-size: 32px;
+  font-weight: normal;
+  color: #000000;
+
+  background: #C4C4C4;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 0;
+  margin-right: 200px;
+}
+.intro_btn:hover,:focus,:active{
+  background: #898989;
+}
+
+/* Button end */
+
+
+/* Main start */
+
+.wrapper_txt{
+  max-width: 1260px;
+  background-color: #C4C4C4;
+  margin-left: 400px;
+  border-radius: 7px;
+  margin-right: 0px;
+  position: relative;
+}
+.intro_txt{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  padding: 20px 10px;
+
+}
+.intro_logo{
+  margin-top: -300px;
+  position:absolute;
+}
+.intro_logo-pic{
+  width: 280px;
+  height: 290px;
+
+}
+
+/* Main end */
+
+
+/* popular games start*/
+
+.Pup_title{
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 45px;
+  text-align: center;
+  padding: 20px;
+}
+
+.pup_game{
+    background-color:#5D5C5C;
+    height: 570px;
+    border-radius: 5px;
+
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.flex_box{
+    height: 38%;
+    width: 21.7%;
+    background-color: #C4C4C4;
+    margin-bottom: 29px;
+    margin-left: 45px;
+    border-radius: 5px;
+}
+/* popular games end*/
+
+
+/* New games start */
+.new_title{
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 45px;
+  text-align: center;
+  padding: 20px;
+}
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slider__item:nth-child(1) {
+  background: url(../SVG/image.jpg);
+  margin-bottom: 40px;
+  
+
+}
+
+.slider__item:nth-child(2) {
+  background: url(../SVG/image.jpg);
+ 
+}
+
+.slider__item:nth-child(3) {
+  background: url(../SVG/csgo.png);
+ 
+
+}
+
+.slider__item:nth-child(4) {
+  background: url(../SVG/image.jpg)
+  
+}
+
+.slider__item:nth-child(5) {
+  background: url(../SVG/csgo.png);
+}
+
+.slider {
+position: relative;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+.slider__wrapper {
+  overflow: hidden;
+
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider_disable-transition {
+  transition: none;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 25%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+  position: absolute;
+  top: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color:#000000;
+  text-align: center;
+  height: 100px;
+  border-radius: 5px;
+  transform: translateY(-50%);
+  background: #C4C4C4;
+}
+
+.slider__control_hide {
+  display: none;
+}
+
+.slider__control[data-slide='prev'] {
+  left: 0;
+}
+
+.slider__control[data-slide='next'] {
+  right: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #000000;
+  text-decoration: none;
+  outline: 0;
+  background: #898989;;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control[data-slide='prev']::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide='next']::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* индикаторы */
+
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider__indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.slider__indicators li.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* New games end */
+
+/* Main end */
+
+
+/* Footer start */
+
+.footer{
+  background: #C4C4C4;
+
+}
+.footer_nav{
+
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+.fot_help{
+  text-align: center;
+  padding: 25px 25px 25px 1300px;
+  
+}
+/* fotter end */
+
+
+/* Madia start */
+
+@media screen and (max-width: 1725px ) {
+  .wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .intro_main{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .fot_help{
+    text-align: center;
+    padding: 25px 25px 25px 1050px;
+    
+  }
+  .installe{
+
+    font-size: 32px;
+    margin-right: 570px;
+  }
+  .new_btn:first-child{
+
+    margin-left: 20px;
+
+  }
+
+  .flex_box{
+    width: 21%;
+  }
+  @media screen and (max-width: 1445px ) {
+    .wrapper{
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+    .intro_main{
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+    .fot_help{
+      text-align: center;
+      padding: 25px 25px 25px 850px;
+      
+    }
+    .installe{
+      margin-right: 400px;
+    }
+    .intro_btn{
+      margin-right: 150px;
+    }
+    .flex_box{
+      height: 36%;
+      width: 20%;
+      margin-bottom: 27px;
+      margin-left: 45px;
+    }
+    .pup_game{
+      height: 450px;
+    }
+    .intro_logo-pic{
+      width: 380px;
+      height: 390px;
+    }
+    .intro_logo{
+      margin-top: -400px;
+      position:absolute;
+    }
+    .new_btn:first-child{
+    
+      width: 80px;
+      height: 110px;
+      margin-left: 50px;
+      margin-bottom: 90px;
+    }
+    .new_btn:last-child{
+    
+      width: 80px;
+      height: 110px;
+      margin-left: 50px;
+      margin-bottom: 90px;
+    }
+    .new_game{
+      height: 250px;
+    }
+    .new_box{
+      height: 70%;
+      width: 20%;
+      margin-bottom: 50px;
+      margin-left: 50px;
+    }
+
+  }
+
+  @media screen and (max-width: 1250px ) {
+    .wrapper{
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    .intro_main{
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    .fot_help{
+      text-align: center;
+      padding: 25px 25px 25px 650px;
+      
+    }
+    .installe{
+  
+      font-size: 32px;
+      margin-right: 200px;
+    }
+    .intro_btn{
+      margin-right: 70px;
+
+    }
+    .wrapper_txt{
+      max-width: 1350px;
+      background-color: #C4C4C4;
+      margin-left: 0px;
+      border-radius: 7px;
+      margin-right: 0px;
+      position: relative;
+    }
+    .intro_txt{
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 20px;
+      line-height: 40px;
+      text-align: center;
+      padding: 20px 10px;
+    
+    }
+    .intro_logo-pic{
+      width: 0;
+      height: 0;
+    }
+    .new_btn:first-child{
+    
+      width: 80px;
+      height: 110px;
+      margin-left: 20px;
+      margin-bottom: 90px;
+    }
+    .new_btn:last-child{
+    
+      width: 80px;
+      height: 110px;
+      margin-left: 50px;
+      margin-bottom: 90px;
+    }
+
+  }
+
+  @media screen and (max-width: 1060px ) {
+    .wrapper{
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .intro_main{
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .fot_help{
+      text-align: center;
+      padding: 25px 25px 25px 0px;
+      
+    }
+    .installe{
+      margin-right: 40px;
+    }
+    .intro_btn{
+      margin-right: 30px;
+    }
+    .header_logo-pic{
+      width: 0;
+      height: 0;
+    }
+    .intro_nav{
+      padding: 150px 0px 50px 15px;
+    }
+    .intro_btn{
+      margin-right: 42px;
+    }
+    .wrapper_txt{
+      max-width: 1350px;
+      margin-left: 0px;
+      border-radius: 7px;
+      margin-right: 0px;
+    }
+    .intro_txt{
+      font-weight: 200;
+      font-size: 30px;
+      line-height: 30px;
+      padding: 20px 10px;
+    
+    }
+    .flex_box{
+      height: 36%;
+      width: 17.5%;
+      margin-bottom: 27px;
+      margin-left: 45px;
+    }
+    .pup_game{
+      height: 300px;
+    }
+    .intro_logo-pic{
+      width: 0;
+      height: 0;
+    }
+
+    @media screen and (max-width: 765px ) {
+      .wrapper{
+        max-width: 370px;
+        margin: 0 auto;
+      }
+      .intro_main{
+        max-width: 370px;
+        margin: 0 auto;
+      }
+      .fot_help{
+        text-align: center;
+        padding: 25px 25px 25px 0px;
+        
+      }
+      .installe{
+        margin-right: 40px;
+      }
+      .intro_btn{
+        margin-right: 30px;
+      }
+      .header_logo-pic{
+        width: 0;
+        height: 0;
+      }
+      .intro_nav{
+        padding: 150px 0px 50px 15px;
+      }
+      .intro_btn{
+        margin-right: 42px;
+      }
+      .wrapper_txt{
+        max-width: 1350px;
+        margin-left: 0px;
+        border-radius: 7px;
+        margin-right: 0px;
+      }
+      .intro_txt{
+        font-weight: 200;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 20px 10px;
+      
+      }
+      .flex_box{
+        height: 36%;
+        width: 17.5%;
+        margin-bottom: 27px;
+        margin-left: 45px;
+      }
+      .pup_game{
+        height: 300px;
+      }
+      .intro_logo-pic{
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}
+/* Madia end */

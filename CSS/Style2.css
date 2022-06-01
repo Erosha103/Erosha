@@ -1,0 +1,247 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* comfortaa-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/comfortaa-v38-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/comfortaa-v38-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/comfortaa-v38-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* comfortaa-regular - latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: local('saegr'),
+       url('../fonts/comfortaa-v38-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-500 - latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  src: local('tht'),
+       url('../fonts/comfortaa-v38-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* comfortaa-700 - latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  src: local('ddff'),
+       url('../fonts/comfortaa-v38-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/comfortaa-v38-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html{
+	box-sizing: border-box;
+}
+*, *::befor, *::after{
+	box-sizing: inherit;
+}
+
+body{
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-size: 32px;
+  font-weight: normal;
+  color: #000000;
+}
+.wrapper{
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+/* Header start */
+
+.header{
+    background:#454545;
+    top: 0;
+    left:0;
+    width:100%;
+    z-index: 999;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.back{
+  margin-top: 10px;
+  margin-bottom:20px;
+  margin-right: 240px;
+  background-color: #C4C4C4;
+  padding: 10px 10px 5px 10px;
+  border-radius: 5px;
+  color: #000000;
+}
+.back:hover,:focus{
+  background:#898989;
+}
+.register{
+  margin-top: 10px;
+  font-style: normal;
+  font-size: 70px;
+  font-weight: 700;
+}
+.main{
+    background-color: #454545;
+}
+
+/* Header end */
+
+
+/* Button start */
+
+.form_fields{
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 100px 0 200px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.text{
+  display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+  width: 400px;
+  margin-bottom: 30px;
+
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-size: 32px;
+  font-weight: normal;
+  color: #000000;
+  border-radius: 5px;
+  
+}
+.btn{
+  background: #84DC2C;
+  border-radius: 20px;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-size: 32px;
+  font-weight: normal;
+  color: #000000;
+  border: 0;
+
+  padding: 10px 15px;
+  border: 0;
+}
+.form_btn{
+  margin: 0 auto;
+}
+.btn:hover,:focus{
+  background:#5C9B1C;
+}
+
+/* Button end */
+
+.footer{
+  background: #C4C4C4;
+}
+.footer_nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_2{
+  text-align: center;
+  padding: 20px 0 20px 280px;
+}
+
+@media screen and (max-width: 1060px ) {
+  .footer_2{
+    text-align: center;
+    padding: 20px 0 20px 180px;
+  }
+  .back{
+    margin-right: 120px;
+
+  }
+}
+@media screen and (max-width: 810px ) {
+  .footer_2{
+    text-align: center;
+    padding: 20px 0 20px 20px;
+  }
+  .back{
+    margin-right: 20px;
+
+  }
+}
