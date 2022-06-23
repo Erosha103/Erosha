@@ -260,6 +260,20 @@ body{
 .Prof4_box:hover,:focus,:active{
     background: #5C9B1C;
 }
+.Prof5_box{
+  margin-right: 30px;
+  margin-top: 30px;
+
+  background-color: #C4C4C4;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: #000000;
+  text-align: center;
+}
+.Prof5_box:hover,:focus,:active{
+  background: #898989;
+}
 
 /* Main end */
 
